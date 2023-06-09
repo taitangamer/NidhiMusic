@@ -9,17 +9,17 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="➕ 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ➕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ",
+                text="🔧 𝐇ᴇʟᴘ 🔧️",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
+                text="⚙️ 𝐒ᴇᴛᴛɪɴɢs ⚙️", callback_data="settings_helper"
             ),
         ],
      ]
@@ -30,24 +30,25 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="•ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ•",
+                text="➕ 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ➕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="🍂ᴄᴏᴍᴍᴀɴᴅs🍂", callback_data="settings_back_helper"
-            ),
-            InlineKeyboardButton(
-                text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", user_id=OWNER
+                text="🔧 𝐇ᴇʟᴘ & 𝐂ᴏᴍᴍᴀɴᴅ 🔧", callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="💔sᴜᴩᴩᴏʀᴛ💔", url=config.SUPPORT_GROUP
+                text="🥀 𝐒ᴜᴘᴘᴏʀᴛ 💥", url="https//t.me/timepassgroup01")
             ),
             InlineKeyboardButton(
-                text="✨ sᴏᴜʀᴄᴇ ✨", url=f"https://github.com/itsneerja/NidhiMusic"
+                text="🥀 𝐆ʀᴏᴜᴘ 💥", url="https://t.me/dangerous_fighter_clan_0")
+        ],
+        [
+            InlineKeyboardButton(
+                text="♕︎ 𝐎ᴡɴᴇʀ ♕", user_id=OWNER
             )
         ],
      ]
